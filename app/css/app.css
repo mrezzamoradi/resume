@@ -1,0 +1,266 @@
+:root {
+    --main-color: #00adc8;
+    --main-color-dark: #005969;
+    --timeline-dots: #757575;
+    --page-width: 925px;
+    --page-height: 1309px;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/AvenirNextLTPro-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir Next Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/AvenirNextLTPro-Demi.otf") format('opentype');
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+* {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e2e3e5;
+}
+
+a {
+    color: black;
+}
+
+.highlight {
+    color: var(--main-color);
+}
+
+.highlight-bold {
+    color: var(--main-color-dark);
+    font-weight: bold;
+}
+
+.highlight-unfocused {
+    color: var(--timeline-dots);
+    font-weight: bold;
+}
+
+
+.page {
+    width: var(--page-width);
+    height: var(--page-height);
+    margin: 1cm auto;
+    background-color: white;
+}
+
+
+.resume-header {
+    padding-top: 2em;
+    /*padding-bottom: 1em;*/
+    background-image: url("../images/header-bg.png");
+    /*background-size: 1em 1em;*/
+    /*background-image: linear-gradient(to right, #f4f4f4 1px, transparent 1px), linear-gradient(to bottom, #f4f4f4 1px, transparent 1px);*/
+}
+
+.resume-body {
+    margin-top: 1em;
+}
+
+.job-title {
+    margin-top: 0.5em;
+}
+
+.contact-icon {
+    width: auto;
+    height: 1.3em;
+}
+
+.name {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section-title {
+    border-bottom: 1px solid var(--main-color);
+    margin: 1em 0;
+}
+
+.section-title h5 {
+    font-family: "Avenir Next Bold", sans-serif;
+}
+
+.section-rest {
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 1em;
+}
+
+.side-column {
+    /*margin-top: 2em;*/
+    margin-top: .5em;
+}
+
+.side-column:first-child {
+    margin-top: 0;
+}
+
+.timeline {
+    width: 100%;
+    max-width: 210mm;
+    position: relative;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #ddd;
+}
+
+.timeline:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.entry {
+    clear: both;
+    text-align: left;
+    position: relative;
+}
+
+.entry .entry-icon, .entry-title .entry-icon, .entry-subtitle .entry-icon {
+    margin-bottom: .5em;
+    float: left;
+    width: 0;
+    text-align: left;
+    position: relative;
+}
+
+.entry-title:not(:first-child) {
+    padding-top: 1em;
+}
+
+.entry .entry-icon:before {
+    content: '';
+    margin-top: 1.2em;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border: 1px solid var(--timeline-dots);
+    background-color: #fff;
+    border-radius: 100%;
+    top: 15%;
+    left: -4px;
+    z-index: 99;
+}
+
+.entry-title .entry-icon:before {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0;
+    width: 27px;
+    height: 27px;
+    left: -13px;
+}
+
+.experience-title-python .entry-icon:before {
+    background-image: url("../images/python-icon.png");
+}
+
+.experience-title-devops .entry-icon:before {
+    background-image: url("../images/devops-icon.png");
+}
+
+.entry .entry-body {
+    float: left;
+    padding-left: 1.5em;
+}
+
+.entry .entry-body p:first-child {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.entry-subtitle .entry-body p:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--timeline-dots);
+}
+
+.entry-title .entry-body p:first-child {
+    margin-top: .2em;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.hard-skill {
+    font-family: "Avenir Next Bold", sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    /*border: rgba(0, 173, 200, 1) solid 1px;*/
+    border-radius: .5em;
+    padding: .25em .5em .15em .5em;
+    margin: 0.25em .25em;
+}
+
+.level-4 {
+    color: white;
+    background-color: rgb(0, 59, 75);
+}
+
+.level-3 {
+    color: white;
+    background-color: rgb(0, 122, 145);
+}
+
+.level-2 {
+    color: white;
+    background-color: rgb(0, 173, 200);
+}
+
+.level-1 {
+    color: white;
+    background-color: rgba(0, 183, 224, 0.6);
+}
+
+.language {
+    display: block;
+}
+
+@media print {
+    html, body {
+        min-width: var(--page-width)!important;
+        width: var(--page-width);
+        height: var(--page-height);
+        background-color: white;
+    }
+
+    a:not(.btn) {
+        text-decoration: none;
+    }
+
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+
+}
