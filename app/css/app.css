@@ -81,7 +81,9 @@ a {
 
 .contact-icon {
     width: auto;
-    height: 1.3em;
+    height: 1.2em;
+    position: relative;
+    top: -.15em;
 }
 
 .name {
