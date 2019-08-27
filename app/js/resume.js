@@ -59,7 +59,7 @@ const resume_python = {
 };
 
 const resume_all = {
-    job_title: "Entry Level DevOps",
+    job_title: "Entry Level DevOps Engineer",
     summary: "Respectful self-motivator gifted at finding reliable solution for software issues. Experienced in [Task] and [Task] and offering skills in [Skill] and [Skill]. ",
     experience: [
         {
