@@ -5,7 +5,7 @@ const resume_python = {
         {
             className: "experience-title-python",
             title: "Python Developer",
-            company: "Sokhan, 2017 - Ongoing",
+            company: "<a class='company' href='https://www.linkedin.com/company/fanavaran-etelaate-sokhan/'>Sokhan </a>, 2017 - Ongoing",
             items: [
                 "Supervising the development and deployment of back-end projects related to a virtual assistant platform which empowers our clients to provide their services using speech for Persian-speaking users.",
                 "Planning, writing, and reviewing many end-to-end and unit tests to improve security and performance of company products.",
@@ -65,7 +65,7 @@ const resume_all = {
         {
             className: "experience-title-devops",
             title: "DevOps Engineer",
-            company: "Sokhan, 2018 - Ongoing",
+            company: "<a class='company' href='https://www.linkedin.com/company/fanavaran-etelaate-sokhan/'>Sokhan </a>, 2018 - Ongoing",
             items: [
                 "Continuously collaborating with team members, including scrum masters to ensure a marked improvement in applications and the timely completion of projects.",
                 "Launched self-hosted tools like PYPI server, Phabricator, RocketChat, Gitlab-CE to facilitate production and communication needs of the company",
@@ -79,7 +79,7 @@ const resume_all = {
         {
             className: "experience-title-python",
             title: "Python Developer",
-            company: "Sokhan, 2017 - 2018",
+            company: "<a class='company' href='https://www.linkedin.com/company/fanavaran-etelaate-sokhan/'>Sokhan </a>, 2017 - 2018",
             items: [
                 "Supervising the development and deployment of back-end projects related to a virtual assistant platform which empowers our clients to provide their services using speech for Persian-speaking users.",
                 "Planning, writing, and reviewing many end-to-end and unit tests to improve security and performance of company products.",
@@ -129,5 +129,18 @@ const resume_all = {
         "Automation and Scaling",
         "Node.js",
         "GraphQL",
+    ],
+    education: [
+        {
+            title: "Programming (Self Education)",
+            university: "",
+            items: [
+                "Completed several courses in <span class='highlight-unfocused'>Computer Science and Programming</span> from MIT OCW, edX and Coursera."
+            ]
+        },
+        {
+            title: "Master of Biotechnology & Bachelor of Engineering",
+            university: "Sharif University of Technology, Tehran, 2009-2015",
+        }
     ]
 };
