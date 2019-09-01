@@ -167,6 +167,15 @@ a {
     z-index: 99;
 }
 
+.education-section .entry:first-child .entry-icon:before {
+    margin-top: .1em;
+}
+
+.education-section .entry:first-child .entry-body p {
+    margin-top: -.2em;
+}
+
+
 .entry-title .entry-icon:before {
     background-size: contain;
     background-repeat: no-repeat;
@@ -183,6 +192,21 @@ a {
 
 .experience-title-devops .entry-icon:before {
     background-image: url("../images/devops-icon.png");
+}
+
+a.company {
+    color: var(--timeline-dots)
+}
+
+a.company:after {
+    content: '';
+    display: inline-block;
+    width: .9em;
+    height: .9em;
+    background-image: url("../images/hyperlink-icon.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 }
 
 .entry .entry-body {
@@ -236,10 +260,6 @@ a {
 .level-1 {
     color: white;
     background-color: rgba(0, 183, 224, 0.6);
-}
-
-.language {
-    display: block;
 }
 
 @media print {
