@@ -10,7 +10,7 @@ const resume_python = {
             company: "<a class='company' href='https://www.linkedin.com/company/fanavaran-etelaate-sokhan/'>Sokhan </a>, 2018 - Ongoing",
             items: [
                 "Continuously collaborating with team members, including scrum masters to ensure a marked improvement in applications and the timely completion of projects.",
-                "Launched self-hosted tools like PYPI server, Phabricator, RocketChat, Gitlab-CE to facilitate production and communication needs of the company",
+                "Launched self-hosted tools like PYPI server, Phabricator, RocketChat, Sentry, Gitlab-CE to facilitate production and communication needs of the company",
                 "Gathered and defined customer requirements to develop clear specifications for creating well-organized project plans.",
                 "Discussed project progress with customers, collected feedback on different stages and directly addressed concerns.",
                 "Evaluated potential new applications for existing products.",
