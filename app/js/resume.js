@@ -2,7 +2,7 @@ const resume_python = {
     job_title: "Python Developer",
     summary: "Passionate Python developer with 2+ years experience in web backend, API design, and async programming. " +
         "With comprehensive knowledge about Network, DBs, Docker, Gitlab CI/CD, and monolithic and micro-services architectures, " +
-        "I am eager to expand my capabilities towards scaling, security and other DevOps concepts.",
+        "I am eager to expand my capabilities in backend development.",
     experience: [
         {
             className: "experience-title-devops",
@@ -10,8 +10,8 @@ const resume_python = {
             company: "<a class='company' href='https://www.linkedin.com/company/fanavaran-etelaate-sokhan/'>Sokhan </a>, 2018 - Ongoing",
             items: [
                 "Continuously collaborating with team members, including scrum masters to ensure a marked improvement in applications and the timely completion of projects.",
-                "Launched self-hosted tools like PYPI server, Phabricator, RocketChat, Sentry, Gitlab-CE to facilitate production and communication needs of the company",
-                "Gathered and defined customer requirements to develop clear specifications for creating well-organized project plans.",
+                "Launched self-hosted tools like PYPI server, Phabricator, RocketChat, Sentry, Gitlab-CE to facilitate production and communication needs of the company.",
+                "Administered and maintained <span class='highlight-bold'>Linux</span> servers due to previous working experience in IT and Networking.",
                 "Discussed project progress with customers, collected feedback on different stages and directly addressed concerns.",
                 "Evaluated potential new applications for existing products.",
                 "Collaborated with team members to improve the company’s engineering tools, systems and procedures.",
@@ -66,6 +66,7 @@ const resume_python = {
         {name: "Scrum", level: 2},
         {name: "Virtualization", level: 1},
         {name: "Network", level: 2},
+        {name: "Linux", level: 2},
     ],
     interests: [
         "Automation and Scaling",
