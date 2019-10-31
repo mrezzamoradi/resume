@@ -209,6 +209,18 @@ a.company:after {
     background-size: contain;
 }
 
+.contact a:after {
+    content: '';
+    display: inline-block;
+    width: .8em;
+    height: .8em;
+    margin-left: .2em;
+    background-image: url("../images/hyperlink-icon.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
 .entry .entry-body {
     float: left;
     padding-left: 1.5em;
