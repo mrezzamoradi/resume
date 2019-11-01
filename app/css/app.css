@@ -40,6 +40,22 @@ a {
     color: black;
 }
 
+.font13 {
+    font-size: small;
+}
+
+.font13:before {
+    content: '';
+    display: inline-block;
+    width: .8em;
+    height: .8em;
+    margin-right: .2em;
+    background-image: url("../images/hyperlink-icon.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
 .highlight {
     color: var(--main-color);
 }
@@ -274,9 +290,34 @@ a.company:after {
     background-color: rgba(0, 183, 224, 0.6);
 }
 
+.footer {
+    position: absolute;
+    text-align: center;
+    font-size: 9pt;
+    width: 100%;
+    bottom: 0;
+    background-color: #f4f5f7;
+}
+
+.footer a {
+    font-size: 9pt;
+}
+
+.footer a:after {
+    content: '';
+    display: inline-block;
+    width: .8em;
+    height: .8em;
+    margin-left: .2em;
+    background-image: url("../images/hyperlink-icon.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
 @media print {
     html, body {
-        min-width: var(--page-width)!important;
+        min-width: var(--page-width) !important;
         width: var(--page-width);
         height: var(--page-height);
         background-color: white;

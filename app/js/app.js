@@ -47,7 +47,9 @@ const elements = {
 
     hard_skills: {
         container: ".hard-skills-section",
-        element: '<span class="hard-skill {0}">{1}</span>'
+        element: '' +
+            '<strong>{0}:</strong>' +
+            '<p>{1}</p>'
     },
 
     interests: {
@@ -81,7 +83,7 @@ const elements = {
         element: '' +
             '<div class="entry">' +
             '    <div class="entry-body">' +
-            '        <p>{0}</p>' +
+            '        <p class="mt-2">{0}</p>' +
             '    </div>' +
             '</div>',
     },
@@ -140,13 +142,11 @@ function setupSoftSkills(resume) {
 }
 
 function setupHardSkills(resume) {
-    const sorted_skills = resume.hard_skills.sort(function (s1, s2) {
-        return s1.name.localeCompare(s2.name);
-    });
-    $.each(sorted_skills, function (index, skill) {
-        const className = 'level-{0}'.format(skill.level);
-        appendElementWithExtraParam(elements.hard_skills.container, elements.hard_skills.element, skill.name, className);
-    })
+    for (const entry of Object.entries(resume.hard_skills)) {
+        const topic = entry[0];
+        const skills = entry[1].join(' • ');
+        appendElementWithExtraParam(elements.hard_skills.container, elements.hard_skills.element, skills, topic)
+    }
 }
 
 function setupInterests(resume) {
