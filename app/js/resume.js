@@ -1,9 +1,9 @@
 const resume = {
         job_title: "Python Developer",
-        summary: "Passionate Python developer with 2+ years experience in fullstack development and API design. " +
+        summary: "Passionate Python developer with 3+ years experience in fullstack development and API design. " +
             "I learn fast with little supervision. " +
             "With comprehensive knowledge about Network, DBs, Docker, Gitlab CI/CD, and software architectures, " +
-            "I am eager to expand my capabilities in backend development.",
+            "I am eager to expand my capabilities in development.",
         experience: [
             {
                 className: "experience-title-devops",
